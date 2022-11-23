@@ -1,0 +1,18 @@
+---
+ checks:
+   -
+     pattern: "/python3/i"
+     reason: "No need for use of Python3 here. Use pipenv run or pipenv shell instead."
+     severity: fail
+   -
+     pattern: "/rspec/i"
+     reason: "This is Python material, so no rspec."
+     severity: fail
+   -
+     pattern: "/ruby/i"
+     reason: "This is Python material, so no Ruby."
+     severity: fail
+   -
+     pattern: "/psycopg2/i"
+     reason: "We're using the newer library, psycopg (no '2')."
+     severity: fail
